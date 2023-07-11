@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Complementary Dynamics</title>
+	<meta name="author" content="Otman Benchekroun, Jiayi Eris Zhang, Siddhartha Chaudhuri, Eitan Grinspun, Yi Zhou, Alec Jacobson"/>
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h1 id="complementarydynamics_siggraphasia2020_"> Fast Complementary Dynamics via Skinning Eigenmodes <em>SIGGRAPH 2023</em></h1>
+<div class=authors>
+  Otman Benchekroun, Jiayi Eris Zhang, Siddhartha Chaudhuri, Eitan Grinspun, Yi Zhou, Alec Jacobson <br><br>
+University of Toronto
+</div>
+
+<figure>
+<img src="fish.gif"/>
+</figure>
+
+<h2 id="abstract">Abstract</h2>
+<p> 
+  We propose a reduced-space elasto-dynamic solver that 
+  is well suited for augmenting rigged character
+   animations with secondary motion. At the core 
+   of our method is a novel deformation subspace based on 
+   Linear Blend Skinning that overcomes many of the shortcomings
+    prior subspace methods face. Our skinning subspace is parameterized 
+    entirely by a set of scalar weights, which we can obtain through 
+    a small, material-aware and rig-sensitive generalized eigenvalue problem. 
+    The resulting subspace can easily capture rotational motion and 
+    guarantees that the resulting simulation is rotation equivariant. 
+    We further propose a simple local-global solver for linear co-rotational 
+    elasticity and propose a clustering method to aggregate per-tetrahedra 
+    non-linear energetic quantities. The result is a compact simulation 
+    that is fully decoupled from the complexity of the mesh.
+</p>
+
+<h2 id="downloads">Downloads</h2>
+<ul>
+<li> <a href="./Fast_Complementary_Dynamics.pdf">Paper (100 MB)</a></li>
+<li> <a href="./Fast_Complementary_Dynamics_Low_res.pdf">Paper (10 MB)</a></li>
+<li> <a href="./supplemental-video.mp4">Supplementary Video</a></li>
+<li> <a href="./fast-forward.mp4">Fast Forward Video</a></li>
+</ul>
+
+<h2 id="bibtex">BibTeX</h2>
+<pre><code>@article{benchekroun2023FastComplemDynamics,
+  title = {Fast Complementary Dynamics via Skinning Eigenmodes},
+  author = {Otman Benchekroun, Jiayi Eris Zhang, Siddhartha Chaudhuri, Eitan Grinspun, Yi Zhou, Alec Jacobson},
+  year = {2023},
+  journal = {ACM Transactions on Graphics},
+}
+</code></pre>
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<p>
+  This project is funded in part by NSERC Discovery (RGPIN2017–05235,
+  RGPIN-2021-03733,
+  RGPAS–2017–507938) New Frontiers of Research Fund (NFRFE–201),
+  the Ontario Early Research Award program, the Canada Research
+  Chairs Program, a Sloan Research Fellowship, the DSI Catalyst Grant program and gifts by Adobe Inc. Otman Benchekroun was funded by an NSERC CGS-M scholarship, while Jiayi Eris Zhang is funded by a Stanford Graduate Fellowship.
+  We thank David I.W. Levin, Danny M. Kaufman, Doug L. James, Ty Trusty, Sarah Kushner and Silvia Sellán for insightful conversations. We thank Alejandra Baptista Aguilar for early discussion and adoption in 3D environments, and for providing some of the models in the paper. We thank Silvia Sellán, Selena Ling, Shukui Chen, Aravind Ramakrishnan and Kinjal Parikh for proofreading.  We thank Xuan Dam and John Hancock for technical and administrative assistance throughout the course of this project.
+</p>
+
+</body>
+</html>
+
