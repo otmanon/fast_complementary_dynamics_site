@@ -228,6 +228,11 @@ blockquote::before, blockquote::after, q::before, q::after {
   content: none;
 }
 
+center
+{
+  text-align: center;
+}
+
 h1
 {
   text-align: center;

@@ -7,17 +7,20 @@
   <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<h1 id="complementarydynamics_siggraphasia2020_"> Fast Complementary Dynamics via Skinning Eigenmodes <em>SIGGRAPH 2023</em></h1>
-<div class=authors>
-  Otman Benchekroun, Jiayi Eris Zhang, Siddhartha Chaudhuri, Eitan Grinspun, Yi Zhou, Alec Jacobson <br><br>
-University of Toronto, Stanford University, Adobe Research
+<h1 id="complementarydynamics_siggraphasia2020_" style="font-size:32px;"> Fast Complementary Dynamics via Skinning Eigenmodes</h1>
+
+<h1>  Otman Benchekroun<sup>1</sup>, Jiayi Eris Zhang<sup>2</sup>, Siddhartha Chaudhuri<sup>3</sup>, <br> Eitan Grinspun<sup>1</sup>, Yi Zhou<sup>3</sup>, Alec Jacobson <sup>1, 3</sup></h1>
+
+<h2 style="text-align:center;"> <sup>1</sup>University of Toronto , <sup>2</sup>Stanford University, <sup>3</sup>Adobe Research</h1>
+<h1 > <em>SIGGRAPH North America 2023</em></h1>
+
+<div style="text-align: center;">
+<video width=80% height=80%  muted autoplay loop preload> 
+  <source  src="aquarium.mp4" > 
+</video>
 </div>
 
-<figure>
-<img src="aquarium-wiping.gif"/>
-</figure>
-
-<h2 id="abstract">Abstract</h2>
+<h1 id="abstract" style="text-align:left">Abstract</h1>
 <p> 
   We propose a reduced-space elasto-dynamic solver that 
   is well suited for augmenting rigged character
@@ -35,7 +38,7 @@ University of Toronto, Stanford University, Adobe Research
     that is fully decoupled from the complexity of the mesh.
 </p>
 
-<h2 id="downloads">Downloads</h2>
+<h1 id="downloads" style="text-align:left">Downloads</h1>
 <ul>
 <li> <a href="./Fast_Complementary_Dynamics.pdf">Paper (100 MB)</a></li>
 <li> <a href="./Fast_Complementary_Dynamics_Low_res.pdf">Paper (10 MB)</a></li>
@@ -43,7 +46,7 @@ University of Toronto, Stanford University, Adobe Research
 <li> <a href="./fast-forward.mp4">Fast Forward Video</a></li>
 </ul>
 
-<h2 id="bibtex">BibTeX</h2>
+<h1 id="bibtex" style="text-align:left">Bibtex</h1>
 <pre><code>@article{benchekroun2023FastComplemDynamics,
   title = {Fast Complementary Dynamics via Skinning Eigenmodes},
   author = {Otman Benchekroun, Jiayi Eris Zhang, Siddhartha Chaudhuri, Eitan Grinspun, Yi Zhou, Alec Jacobson},
@@ -53,74 +56,93 @@ University of Toronto, Stanford University, Adobe Research
 </code></pre>
 
 
+<h1 style="text-align:left">Summary</h1>
 
-<figure>
-  <img src="fish.gif" width="100%"/>
-</figure>
-<p> We add secondary motion to rig animations in real-time by using a subspace for the physics simulation.</p>
-
+<div style="text-align: center;">
+  <video width=50% height=50%  muted autoplay loop preload> 
+    <source  src="fast-forward.mp4" > 
+  </video>
+  </div>
+<p style="text-align: center;"> We add secondary motion to rig animations in real-time by using a subspace for the physics simulation.</p>
 
 <div>
   <br>
-      <p style="text-align:justify; margin-right:15%; font-size:24px;">
-          Skinning Eigenmode Subspace
-      </p >
-      <p style="text-align:justify; margin-right:15%;">We propose a linear blend skinning-like subspace for secondary motion. 
+      <p style="text-align:center; margin-right:15%;">We propose a linear blend skinning-like subspace for secondary motion. 
           Our subspace is fully parameterized by a set of skinning weights, which are found 
       via an eigen-decomposition of the elastic energy Laplacian</p>
       
-      <video width="50%" controls> 
-          <source src="videos/charizard-skinning-modes.mp4"> 
-      </video>
+      
+  <div style="text-align: center;">
+    <video width=50% height=50%  muted autoplay loop preload> 
+      <source  src="videos/charizard-skinning-modes.mp4">
+    </video>
+    </div>
+     
 
-      <p style="text-align:justify; margin-right:15%;">
+      <p style="text-align:center; margin-right:15%;">
           With a simple modification to the elastic energy Laplacian, 
           our skinning eigenmodes can be made rig-aware, and satisfy the rig-orthogonality constraint inherently</p>
       
-      <video width="50%" controls> 
+    
+      <div style="text-align: center;">
+        <video width=50% height=50%  muted autoplay loop preload> 
           <source src="videos/charizard-skinning-modes-comp.mp4"> 
-      </video>
-
-      <p style="text-align:justify; margin-right:15%;">
+        </video>
+        </div>
+         
+      <p style="text-align:center; margin-right:15%;">
       To accelerate computation of energetic non-linearities in our simulation, we extend our skinning modes with
       skinning clusters. Our clusters reflect the rig-awareness of our skinning weights</p>
-      <figure>
+
+      
+      <figure style="text-align: center;">
           <img src="videos/clusters.png" width="100%"/>
       </figure>
 </div>
 
 
-<p style="text-align:justify; margin-right:15%; font-size:24px;">
-IK Chicken
+<p style="text-align:center; margin-right:15%; font-size:16px;">
+<strong> IK Chicken</strong>
 </p >
-<video width="50%" controls> 
-  <source src="videos/ik-cd.mp4"> 
-</video>
-
-<p style="text-align:justify; margin-right:15%; font-size:24px;">
-  Pose Tracking
-  </p >
-  <video width="50%" controls> 
-      <source src="videos/pose-tracking.mp4"> 
+<div style="text-align: center;">
+  <video width=50% height=50%  muted autoplay loop preload> 
+    <source src="videos/ik-cd.mp4"> 
   </video>
+  </div>
 
-<p style="text-align:justify; margin-right:15%; font-size:24px;">
-  Face Tracking
+
+
+<p style="text-align:center; margin-right:15%; font-size:16px;">
+  <strong>Pose Tracking </strong>
+  </p >
+
+  <div style="text-align: center;">
+    <video width=50% height=50%  muted autoplay loop preload> 
+      <source  src="videos/pose-tracking.mp4"> 
+    </video>
+    </div>
+
+<p style="text-align:center; margin-right:15%; font-size:16px;">
+  <strong> Face Tracking </strong>
 </p >
-<video width="50%" controls> 
-  <source src="videos/face-tracking.mp4"> 
-</video>
-          
-<p style="text-align:justify; margin-right:15%; font-size:24px;">
-  Interactive Aquarium
+
+<div style="text-align: center;">
+  <video width=50% height=50%  muted autoplay loop preload> 
+    <source src="videos/face-tracking.mp4"> 
+  </video>
+  </div>
+<p style="text-align:center; margin-right:15%; font-size:16px;">
+ <strong>Interactive Aquarium</strong> 
 </p >
-<video width="100%" controls> 
-  <source src="videos/interactive-aquarium.m4v"> 
-</video>
-          
+
+<div style="text-align: center;">
+  <video width=50% height=50%  muted autoplay loop preload> 
+    <source src="videos/interactive-aquarium.m4v"> 
+  </video>
+  </div>
       
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h1  style="text-align:left">Acknowledgements</h1>
 
 <p>
   This project is funded in part by NSERC Discovery (RGPIN2017–05235,
